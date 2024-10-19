@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors'); 
 const app = express();
 const puerto = 3000;
+app.use(cors()); 
 
 app.get('/usuario' ,function(req, res){
     res.json[{
@@ -10,7 +12,7 @@ app.get('/usuario' ,function(req, res){
         segundoapellido: "Figueroa",
         fechanacimiento: "1999-15-08",
         estadofamiliar: "soltero",
-        residencia: "23 calle oriente, barrio san miguellito",
+        residencia: "23 calle oriente, barrio san miguelito",
         profesion: "Auxiliar Administrativo",
         estatura: 1.81,
         peso: 165,
